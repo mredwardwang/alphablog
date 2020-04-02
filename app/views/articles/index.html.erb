@@ -1,0 +1,21 @@
+<h1>Article index</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Descripton</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @articles.each do |a| %>
+        <tr>
+            <td><%= a.title %></td>
+            <td><%= a.description %></td>
+            <td>Placeholder</td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
