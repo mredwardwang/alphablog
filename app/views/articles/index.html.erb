@@ -1,28 +1,3 @@
 <h1 class="text-center mt-4">Article List</h1>
 
-<div class="container">
-    <% @articles.each do |a| %>
-        <div class="row justify-content-md-center">
-            <div class="col-8 mt-4">
-                <div class="card text-center shadow mb-5 bg-white rounded">
-                <div class="card-header">
-                    Created by: <%= a.user.username if a.user %>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title"><%= link_to a.title, article_path(a), class: "text-success" %></h5>
-                   <div class="card-text text-left"><%= simple_format(a.description) %></div>
-                    <%= link_to "View", article_path(a), class: "btn btn-outline-success" %>
-                    <%= link_to "Edit", edit_article_path(a), class: "btn btn-outline-info" %>
-                    <%= link_to "Delete", article_path(a), method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-outline-danger" %>
-                </div>
-                <div class="card-footer text-muted">
-                    <small>
-                    Created: <%= time_ago_in_words(a.created_at) %> ago,
-                    Updated: <%= time_ago_in_words(a.updated_at) %> ago
-                    </small>
-                </div>
-                </div>
-            </div>
-        </div>
-    <% end %>
-</div>
+<%= render 'article', obj: @articles %>
