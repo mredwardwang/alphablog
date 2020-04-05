@@ -9,6 +9,9 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 gem 'pg'
 # Use bcrypt
 gem 'bcrypt', '~> 3.1.7'
+# Use paginate
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
