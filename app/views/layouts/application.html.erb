@@ -2,10 +2,14 @@
 <html>
   <head>
     <title>Barstow Blog</title>
+    <%= favicon_link_tag %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', 
+                              "https://fonts.googleapis.com/css2?family=Merriweather&display=swap",
+                              media: 'all', 
+                              'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -16,6 +20,8 @@
       <%= yield %>
     </div>
       <%= render 'layouts/footer' %>
-      <%= debug(params) if Rails.env.development? %>
+
+      <%# <%= debug(params) if Rails.env.development? %>
+
   </body>
 </html>

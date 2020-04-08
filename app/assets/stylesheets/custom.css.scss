@@ -1,6 +1,7 @@
 
 @import 'bootstrap/dist/css/bootstrap';
 
+
 .navbar {
     background-color: black !important;
     }
@@ -12,15 +13,15 @@
 #logo {
     float: left;
     color: #fff;
+    font-family: 'Merriweather', serif;
     font-size: 1.2em;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: -1px;
-    font-weight: bold;
     ;
 }
 
 #logo-trademark {
+    font-family: 'Merriweather', serif;
     color: #fff;
 }
 
@@ -41,6 +42,7 @@
 html,
 body {
   height: 100%;
+  font-family: 'Merriweather', serif;
 }
 
 #page-content {
